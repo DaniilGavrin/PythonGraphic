@@ -1,19 +1,19 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-#создаем массивы данных
-x = np.linspace(0, 10, 50) #массив значений по оси х
-y = np.sin(x) #массив значений по оси y
+#Данные цен на товары в течении 2022 года
+prices = [100, 180, 120, 200, 165, 150, 180, 132, 99, 150, 160, 180]
 
-#создаём график
-plt.plot(x, y)
+#Ось времени
+months = range(1, len(prices) + 1)
 
-#настрлйка параметров графика
-plt.title('Синусоидальная функция')
-plt.xlabel('x')
-plt.ylabel('sin(x)')
+#Построение графика
+plt.plot(months, prices)
 
-plt.grid(True)
+#настройка оис и заголовков
+plt.title('Цена')
+plt.xlabel('Дни')
+plt.ylabel('Цены')
 
-#Выводим график на экран
+# Отображение графика
 plt.show()
