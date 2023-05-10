@@ -15,7 +15,7 @@ opacity = 0.8
 index = np.arange(len(names))
 
 rects1 = plt.bar(index, employee1, bar_width, alpha=opacity, color='b', label = 'Даниил')
-rects2 = plt.bar(index + bar_width, employee2, bar_width, alpha=opacity, color='g', label = 'none')
+rects2 = plt.bar(index + bar_width, employee2, bar_width, alpha=opacity, color='g', label = 'Нет сотрудника')
 rects3 = plt.bar(index + bar_width *2, employee3, bar_width, alpha=opacity, color='r', label = 'Нет сотрудника')
 
 plt.xlabel('День недели')
